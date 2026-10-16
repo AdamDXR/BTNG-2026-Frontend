@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #f4f6f8;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --header-bg: #2c3e50;
+    --header-text: #ffffff;
+    --btn-bg: #3498db;
+    --btn-hover: #2980b9;
+}
+
+body.tema-gelap {
+    --bg-color: #1a1a2e;
+    --text-color: #e0e0e0;
+    --card-bg: #16213e;
+    --header-bg: #0f3460;
+    --header-text: #ffffff;
+    --btn-bg: #e94560;
+    --btn-hover: #d13050;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.container {
+    width: 90%; 
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.profil {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.foto-profil {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--btn-bg);
+    margin-bottom: 1rem;
+}
+
+.profil h2 {
+    margin: 0.5rem 0;
+}
+
+.profil p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.grup-tombol button {
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.grup-tombol button:hover {
+    background-color: var(--btn-hover);
+}
+
+.keterampilan h3.judul-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.kartu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.kartu {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.kartu h4 {
+    margin-top: 0;
+    color: var(--btn-bg);
+}
+
+@media (min-width: 768px) {
+    .kartu-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
