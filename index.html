@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Garasi Mobil - Showroom jual beli mobil bekas dan baru berkualitas dengan harga terbaik.">
+  <title>Garasi Mobil | Showroom Pilihan Terbaik</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#beranda" class="logo">
+        <span class="logo-icon">&#128663;</span>
+        <span class="logo-text">Garasi<strong>Mobil</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#beranda" class="nav-item">Beranda</a>
+        <a href="#katalog" class="nav-item">Katalog Mobil</a>
+        <a href="#keunggulan" class="nav-item">Keunggulan</a>
+        <a href="#kontak" class="nav-item">Kontak</a>
+        <a href="#katalog" class="btn btn-primary btn-nav">Cari Mobil</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="beranda">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <span class="badge-tag">Showroom Resmi & Terpercaya</span>
+          <h1 class="hero-title">Temukan Mobil Impian Anda dengan Mudah dan Aman</h1>
+          <p class="hero-subtitle">
+            Koleksi mobil terlengkap dengan inspeksi menyeluruh, kondisi prima, dan harga transparan. Siap pakai untuk perjalanan Anda.
+          </p>
+          <div class="hero-buttons">
+            <a href="#katalog" class="btn btn-primary">Lihat Katalog Mobil</a>
+            <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="images/banner-mobil.jpg" alt="Showroom Garasi Mobil" class="hero-img" onerror="this.style.opacity='0.6'">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KATALOG MOBIL (API) ================= -->
+    <section class="section katalog" id="katalog">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Katalog Unit Tersedia</h2>
+          <p class="section-desc">Data unit mobil kami diambil langsung secara real-time dari sistem inventaris.</p>
+        </div>
+
+        <div class="filter-card">
+          <div class="filter-grid">
+            <div class="filter-item search-item">
+              <label for="inputCari">Cari Mobil</label>
+              <input type="text" id="inputCari" placeholder="Ketik nama mobil atau tipe...">
+            </div>
+
+            <div class="filter-item">
+              <label for="filterBrand">Merek / Brand</label>
+              <select id="filterBrand">
+                <option value="">Semua Merek</option>
+              </select>
+            </div>
+
+            <div class="filter-item">
+              <label for="filterStatus">Status</label>
+              <select id="filterStatus">
+                <option value="">Semua Status</option>
+                <option value="tersedia">Tersedia</option>
+                <option value="sold">Terjual</option>
+              </select>
+            </div>
+
+            <div class="filter-item">
+              <label for="sortHarga">Urutan</label>
+              <select id="sortHarga">
+                <option value="terbaru">Terbaru</option>
+                <option value="termurah">Harga Terendah</option>
+                <option value="termahal">Harga Tertinggi</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="katalog-status" id="katalogStatus">
+          Memuat daftar mobil...
+        </div>
+
+        <div class="car-grid" id="carGrid">
+          </div>
+      </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN ================= -->
+    <section class="section keunggulan" id="keunggulan">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Kenapa Memilih Garasi Mobil?</h2>
+          <p class="section-desc">Komitmen kami memberikan layanan terbaik dan rasa aman untuk setiap pelanggan.</p>
+        </div>
+
+        <div class="keunggulan-grid">
+          <div class="keunggulan-card">
+            <div class="keunggulan-icon">&#10004;&#65039;</div>
+            <h3 class="keunggulan-title">Inspeksi Standar Tinggi</h3>
+            <p class="keunggulan-text">Seluruh unit telah melalui pengecekan mesin, rangka, dan sistem kelistrikan secara teliti.</p>
+          </div>
+
+          <div class="keunggulan-card">
+            <div class="keunggulan-icon">&#128196;</div>
+            <h3 class="keunggulan-title">Kelengkapan Dokumen</h3>
+            <p class="keunggulan-text">Surat-surat kendaraan seperti BPKB, STNK, dan faktur dijamin asli dan sah secara hukum.</p>
+          </div>
+
+          <div class="keunggulan-card">
+            <div class="keunggulan-icon">&#129309;</div>
+            <h3 class="keunggulan-title">Proses Cepat & Mudah</h3>
+            <p class="keunggulan-text">Transaksi tunai maupun kredit dibantu oleh tim sales profesional hingga serah terima unit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section class="section kontak" id="kontak">
+      <div class="container">
+        <div class="kontak-wrapper">
+          <div class="kontak-info">
+            <span class="badge-tag">Hubungi Showroom</span>
+            <h2 class="section-title">Siap Membantu Pembelian Mobil Anda</h2>
+            <p class="kontak-desc">Kunjungi showroom kami untuk melihat langsung unit atau lakukan konsultasi gratis bersama tim konsultan kami.</p>
+
+            <div class="info-items">
+              <div class="info-row">
+                <span class="info-icon">&#128205;</span>
+                <div>
+                  <strong>Alamat Showroom</strong>
+                  <p>Jl. Pandanaran No. 88, Semarang, Jawa Tengah</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <span class="info-icon">&#128337;</span>
+                <div>
+                  <strong>Jam Operasional</strong>
+                  <p>Senin - Minggu: 08.30 - 18.00 WIB</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <span class="info-icon">&#128222;</span>
+                <div>
+                  <strong>Kontak Telepon / WA</strong>
+                  <p>+62 812-3456-7890</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="kontak-form" id="formKontak">
+            <h3 class="form-title">Tinggalkan Pesan</h3>
+            
+            <div class="form-group">
+              <label for="namaPengirim">Nama Lengkap</label>
+              <input type="text" id="namaPengirim" required placeholder="Masukkan nama Anda">
+            </div>
+
+            <div class="form-group">
+              <label for="noWa">Nomor WhatsApp</label>
+              <input type="tel" id="noWa" required placeholder="08xxxxxxxxxx">
+            </div>
+
+            <div class="form-group">
+              <label for="pesanTeks">Pesan / Mobil yang Ditanyakan</label>
+              <textarea id="pesanTeks" rows="4" required placeholder="Tuliskan pesan atau mobil yang ingin ditanyakan..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+            <div class="form-notif" id="formNotif"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="tahunFooter">2026</span> Garasi Mobil. Tugas Akhir BTNG Kelas Frontend.</p>
+      <p class="footer-sub">HTML, CSS, dan Vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL DETAIL MOBIL ================= -->
+  <div class="modal-overlay" id="modalDetail" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="btnTutupModal" aria-label="Tutup Detail">&times;</button>
+      <div class="modal-content" id="modalKonten">
+        </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
