@@ -1,7 +1,7 @@
 # Garasi Mobil - Website Showroom Mobil
 
-Website showroom mobil dibuat untuk memenuhi **Tugas Akhir BTNG Kelas Frontend**.
-Dibangun menggunakan **HTML5, CSS3, dan Vanilla JavaScript murni** tanpa framework sesuai dengan ketentuan teknis yang dipersyaratkan.
+Tugas Akhir BTNG 2026 Frontend
+Adam Haritsa Thahara
 
 ## Fitur Website
 
@@ -22,22 +22,3 @@ Dibangun menggunakan **HTML5, CSS3, dan Vanilla JavaScript murni** tanpa framewo
 5. **Formulir Kontak:**
    - Formulir pesan konsultasi showroom dengan validasi input sederhana.
 
-## Struktur File & Folder
-
-```
-BTNG-Frontend-NamaGw/
-├── index.html          # Struktur halaman utama (HTML5)
-├── css/
-│   └── style.css       # Desain dan tata letak responsif (CSS3)
-├── js/
-│   └── script.js       # Integrasi fetch API, DOM manipulation, filter & modal
-├── images/             # Folder aset gambar lokal
-│   └── README.md
-└── README.md           # Dokumentasi proyek
-```
-
-## Cara Menjalankan
-
-1. Clone atau unduh folder proyek ini.
-2. Buka file `index.html` langsung menggunakan browser pilihan Anda (Chrome, Edge, Firefox, dll), atau jalankan menggunakan ekstensi **Live Server** di VS Code.
-3. Pastikan perangkat Anda terhubung dengan internet agar fungsi `fetch()` ke API resmi dapat memuat data mobil.
